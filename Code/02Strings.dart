@@ -1,3 +1,4 @@
+import 'dart:io';
 
 main() {
   print(
@@ -17,6 +18,22 @@ line3
 .
 .""";
   print(multiLines);
+
+  print(
+      "----------------------------------escape characters--------------------------\n");
+  // (/' /" // /t /n)
+  print("-------using \\ in dart-------\n");
+  print("when you use this character \\ you must write \\\\ two times\n");
+  print("-------using \" in dart -------");
+  print("when you use this character \" you must write \\ before \"\n");
+  print("-------using \' in dart -------\n");
+  print("when you use this character \' you must write \\ before \'\n");
+  print("-------using \\n in dart-------\n");
+  print(
+      "if you want to make new line in the same line when you write code you must write \\n\n");
+
+  // String line = "welcome \"to\" our \\company\\\nhelloahmad\tto company";
+  // print(line);
 
   print(
       "--------------------concatenation in dart----------------------------\n");
